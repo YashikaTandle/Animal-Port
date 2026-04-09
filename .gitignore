@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment Variables
+.env
+
+# PyTorch Model
+# skin_disease_model.pth (Commented out to include the model since it's around 9MB and under the 100MB GitHub limit. Uncomment if you want to exclude it.)
+
+# Uploads directory
+backend/uploads/
+
+# Frontend builds
+frontend/dist/
+frontend/dist-ssr/
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store

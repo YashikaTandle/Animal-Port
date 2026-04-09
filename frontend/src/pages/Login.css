@@ -1,0 +1,126 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--surface-color);
+  padding: var(--space-2xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.auth-header {
+  text-align: center;
+}
+
+.auth-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--space-md);
+  box-shadow: 4px 4px 0px var(--shadow-color);
+  border: var(--border-width) solid var(--surface-border);
+}
+
+.auth-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: var(--space-xs);
+  text-shadow: 2px 2px 0px var(--shadow-color);
+  -webkit-text-stroke: 1px var(--shadow-color);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.input-group label {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 3rem;
+  border: var(--border-width) solid var(--surface-border);
+  border-radius: var(--border-radius-sm);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  transition: all var(--transition-fast);
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  background-color: var(--surface-color);
+  box-shadow: 4px 4px 0px var(--shadow-color);
+  transform: translate(-2px, -2px);
+}
+
+.auth-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.forgot-password:hover {
+  color: var(--primary-color);
+}
+
+.auth-submit-btn {
+  width: 100%;
+  margin-top: var(--space-sm);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: var(--space-md);
+}
+
+.auth-footer p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.auth-footer a {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-left: var(--space-xs);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}

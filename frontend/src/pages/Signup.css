@@ -1,0 +1,11 @@
+/* Signup specific styles can extend or reuse from Login.css */
+@import './Login.css';
+
+/* Any specific overrides for Signup can go here */
+.auth-header h2 {
+  color: var(--secondary-color);
+}
+
+.auth-footer a {
+  color: var(--secondary-color);
+}

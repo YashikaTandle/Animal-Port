@@ -1,0 +1,123 @@
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space-md) 0;
+  z-index: 100;
+}
+
+.navbar-inner {
+  padding: var(--space-sm) var(--space-xl);
+  border-radius: 100px;
+  height: 70px;
+  background: var(--surface-color);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+}
+
+.navbar-logo span {
+  color: var(--primary-color);
+  text-shadow: 2px 2px 0px var(--shadow-color);
+}
+
+.logo-icon {
+  color: var(--text-primary);
+}
+
+.desktop-nav {
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.nav-link {
+  color: var(--text-primary);
+  font-weight: 800;
+  font-size: 1.1rem;
+  position: relative;
+  padding: var(--space-xs) 0;
+  transition: transform var(--transition-fast);
+}
+
+.nav-link:hover {
+  transform: translateY(-2px) rotate(-3deg);
+  color: #fff;
+  text-shadow: 2px 2px 0px var(--shadow-color);
+}
+
+.nav-link.active {
+  color: #fff;
+  text-shadow: 2px 2px 0px var(--shadow-color);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.user-profile {
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.user-profile:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.4rem;
+  border: var(--border-width) solid var(--surface-border);
+  box-shadow: 3px 3px 0px var(--shadow-color);
+  overflow: hidden; /* Prevent image from spilling out */
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0; /* Override if any */
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .navbar-inner {
+    border-radius: var(--border-radius-md);
+    padding: var(--space-sm) var(--space-md);
+  }
+}
